@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "749901460475",
+    "project_id": "roteiro-do-vinho",
+    "storage_bucket": "roteiro-do-vinho.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749901460475:android:2844e9a4ee4955c4b9915e",
+        "android_client_info": {
+          "package_name": "com.example.roteirodovinho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749901460475-0ds1evhes7cpfid93njga837thcrsttk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOWjbccwtnnqqkJ4QPveFHWweCQBgDTxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749901460475-0ds1evhes7cpfid93njga837thcrsttk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
