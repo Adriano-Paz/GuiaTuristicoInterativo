@@ -27,25 +27,19 @@ class _LoginScreenState extends State<LoginScreen> {
       if (usuario != null) {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(
-            builder: (context) => const Home_Screen(),
-          ),
+          MaterialPageRoute(builder: (context) => const HomeScreen()),
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Login cancelado pelo usuário.'),
-          ),
+          const SnackBar(content: Text('Login cancelado pelo usuário.')),
         );
       }
     } catch (e) {
       if (!mounted) return;
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Erro ao fazer login: $e'),
-        ),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('Erro ao fazer login: $e')));
     } finally {
       if (mounted) {
         setState(() {
@@ -65,20 +59,12 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Icon(
-                  Icons.wine_bar,
-                  size: 90,
-                  color: Colors.purple,
-                ),
-
-                const SizedBox(height: 24),
-
+                Image(image: AssetImage("images/uva_icon.png")),
+                // const Icon(Icons.wine_bar, size: 90, color: Colors.purple),
+                // const SizedBox(height: 24),
                 const Text(
                   'Roteiro do Vinho',
-                  style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                 ),
 
                 const SizedBox(height: 8),
@@ -86,10 +72,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 const Text(
                   'Guia turístico interativo de São Roque/SP',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.black54,
-                  ),
+                  style: TextStyle(fontSize: 16, color: Colors.black54),
                 ),
 
                 const SizedBox(height: 40),
@@ -103,15 +86,11 @@ class _LoginScreenState extends State<LoginScreen> {
                         ? const SizedBox(
                             width: 22,
                             height: 22,
-                            child: CircularProgressIndicator(
-                              strokeWidth: 2,
-                            ),
+                            child: CircularProgressIndicator(strokeWidth: 2),
                           )
                         : const Icon(Icons.login),
                     label: Text(
-                      carregando
-                          ? 'Entrando...'
-                          : 'Entrar com Google',
+                      carregando ? 'Entrando...' : 'Entrar com Google',
                     ),
                   ),
                 ),

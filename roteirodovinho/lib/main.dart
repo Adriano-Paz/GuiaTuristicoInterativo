@@ -20,10 +20,7 @@ class RoteiroDoVinhoApp extends StatelessWidget {
     return MaterialApp(
       title: 'Roteiro do Vinho',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: Colors.purple,
-      ),
+      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.purple),
       home: const VerificarLogin(),
     );
   }
@@ -39,14 +36,12 @@ class VerificarLogin extends StatelessWidget {
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Scaffold(
-            body: Center(
-              child: CircularProgressIndicator(),
-            ),
+            body: Center(child: CircularProgressIndicator()),
           );
         }
 
         if (snapshot.hasData) {
-          return const Home_Screen();
+          return const HomeScreen();
         }
 
         return const LoginScreen();
