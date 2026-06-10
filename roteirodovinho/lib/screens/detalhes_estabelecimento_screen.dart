@@ -289,8 +289,12 @@ class _DetalhesEstabelecimentoScreenState
         },
       );
     } finally {
-      comentarioController.dispose();
+      _descartarComentarioController(comentarioController);
     }
+  }
+
+  void _descartarComentarioController(TextEditingController controller) {
+    Future<void>.delayed(const Duration(seconds: 1), controller.dispose);
   }
 
   @override
