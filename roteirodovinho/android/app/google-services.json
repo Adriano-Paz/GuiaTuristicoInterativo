@@ -14,6 +14,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "749901460475-n9aul41gi253m45te1beek7l9ou5c16m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.roteirodovinho",
+            "certificate_hash": "5a2f0d4000e0d7d2ddbfa6851364ed0a49629e91"
+          }
+        },
+        {
+          "client_id": "749901460475-uuftrlrqb3tje3e1b9sjhpvolpf6ltbh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.roteirodovinho",
+            "certificate_hash": "76efba9067e142170aef4d74c6486aba6a91274a"
+          }
+        },
+        {
           "client_id": "749901460475-0ds1evhes7cpfid93njga837thcrsttk.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,6 +45,13 @@
             {
               "client_id": "749901460475-0ds1evhes7cpfid93njga837thcrsttk.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "749901460475-pi6upvr37r7v5j8aipd06br296503j1u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.roteirodovinho"
+              }
             }
           ]
         }

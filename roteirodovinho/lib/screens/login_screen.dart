@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:roteirodovinho/controllers/auth_controller.dart';
-import 'home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -24,12 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
       if (!mounted) return;
 
-      if (usuario != null) {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => const HomeScreen()),
-        );
-      } else {
+      if (usuario == null) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Login cancelado pelo usuário.')),
         );

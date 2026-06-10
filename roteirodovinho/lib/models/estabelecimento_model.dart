@@ -10,7 +10,7 @@ class Estabelecimento {
   final double longitude;
   final String telefone;
 
-  Estabelecimento({
+  const Estabelecimento({
     required this.id,
     required this.nome,
     required this.categoria,

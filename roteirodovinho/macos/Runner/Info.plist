@@ -24,6 +24,10 @@
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>$(PRODUCT_COPYRIGHT)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>O app usa a câmera para anexar fotos às avaliações dos estabelecimentos.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>O app usa sua localização para mostrar distância e posição no mapa.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>

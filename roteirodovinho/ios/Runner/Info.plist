@@ -49,6 +49,10 @@
 	</dict>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>O app usa a câmera para anexar fotos às avaliações dos estabelecimentos.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>O app usa sua localização para mostrar distância e posição no mapa.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
